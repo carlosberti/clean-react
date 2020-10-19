@@ -25,5 +25,13 @@
     "lint-staged": "^10.4.2",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
