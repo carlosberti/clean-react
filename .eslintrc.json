@@ -1,5 +1,5 @@
 {
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -11,6 +11,9 @@
   },
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars-experimental": "off"
+    "@typescript-eslint/no-unused-vars-experimental": "off",
+    "simple-import-sort/sort": "error",
+    "sort-imports": "off",
+    "import/order": "off"
   }
 }
